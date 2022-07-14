@@ -1,0 +1,285 @@
+@import '_vars.scss';
+@import '_fonts.scss';
+@import '_global.scss';
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 9999;
+  // background: $dark-edit;
+  &__inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+  }
+  .logo{
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &__nav-list{
+    display: flex;
+    margin-right: 30px;
+  }
+  &__nav-item{
+    & + &{
+      margin-left: 38px;
+    }
+  }
+  &__nav-link{
+    transition: all .4s;
+    font-size: 18px;
+    line-height: 21px;
+    position: relative;
+    &:hover{
+      color: #BCB6FF;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 0%;
+      bottom: -6px;
+      height: 3px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #E84DFE 0%, #813CFF 100%);
+      transition: all .4s;
+    }
+    &--active{
+      &:after{
+        width: 100%;
+      }
+      &:hover{
+        color: $secondary;
+      }
+    }
+  }
+  &__buttonwrapper{
+    text-align: center;
+    // transform: translateY(7px);
+    display: flex;
+    flex-direction: column;
+    .btn{
+      padding: 0 27px;
+    }
+  }
+  &__button-descr{
+    font-size: 10px;
+    line-height: 12px;
+    color: $main;
+    margin-top: 4px;
+    font-weight: 400;
+    transform: translateY(3px);
+    transition: all .3s;
+    &:hover{
+      opacity: .8;
+    }
+  }
+  &__blockchain{
+    margin-right: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 165px;
+    width: 100%;
+    background: #322361;
+    height: 40px;
+    border-radius: 20px;
+    padding: 2px;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Roboto", sans-serif;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -2px;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #EE4EFE 0%, #853CFF 100%);
+    }
+  }
+  &__blockchain-icon{
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // color: $addit;
+    background: $secondary;
+    padding: 5px 6px;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 21px;
+    img{
+      object-fit: contain;
+    }
+  }
+  &__blockchain-name{
+    color: $secondary;
+  }
+  &__blockchain-arrow{
+    position: absolute;
+    top: 13px;
+    right: 14px;
+  }
+  &__wallets{
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    background: #322361;
+    padding-left: 21px;
+    padding-right: 21px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+    position: relative;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -2px;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #EE4EFE 0%, #853CFF 100%);
+    }
+    &:after{
+      transition: all .4s;
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;
+      margin: -2px;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #EE4EFE 0%, #853CFF 100%);
+    }
+    &--connected{
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 14px;
+      .wallets{
+        min-width: 100%;
+        .btn{
+          width: 100%;
+          min-width: 150px;
+        }
+      }
+    }
+  }
+  &__wallets-imgwrapper{
+    margin-left: 10px;
+    display: flex;
+    img{
+      transition: all .4s;
+    }
+    &:hover{
+      img{
+        opacity: .7;
+      }
+    }
+  }
+  &__profile{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-left: 25px;
+    background: linear-gradient(135deg, #F24EFE 0%, #813BFF 100%);
+    transition: all .4s;
+    border-radius: 50%;
+  }
+  &__profile-logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  &__menu-btn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 26px;
+    min-width: 26px;
+    margin-left: 18px;
+    div{
+      height: 3px;
+      width: 100%;
+      display: block;
+      background-color: $secondary;
+      border-radius: 10px;
+    }
+  }
+  &__menu{
+    height: 0;
+    opacity: 0;
+    transition: opacity .2s, height .4s;
+    pointer-events: none;
+    .header__buttonwrapper{
+      display: none;
+    }
+    &--active{
+      height: unset;
+      opacity: 1;
+      pointer-events: all;
+    }
+    &--not-main{
+      display: flex;
+      justify-content: space-around;
+      .header__blockchain,
+      .header__wallets,
+      .header__profile{
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.footer{
+  // background-color: $dark-edit;
+  // padding: 31px 0;
+  // &__inner{
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+  // &__copyright{
+  //   margin-left: 23px;
+  //   font-size: 14px;
+  //   line-height: 16px;
+  // }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import '_media.scss';
