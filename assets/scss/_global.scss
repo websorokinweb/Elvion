@@ -169,6 +169,10 @@ button{
   font-size: 52px;
   line-height: 70px;
   color: $secondary;
+  &--main{
+    font-size: 68px;
+    line-height: 75px;
+  }
 }
 
 // .list{
