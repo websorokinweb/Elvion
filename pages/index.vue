@@ -1,10 +1,8 @@
 <template>
   <div>
-    <div class="container">
-      <div class="test">
-        dkdl
-      </div>
-    </div>
+    <!-- <index-collection></index-collection> -->
+    <index-roadmap></index-roadmap>
+    <app-footer></app-footer>
   </div>
 </template>
 
