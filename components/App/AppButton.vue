@@ -61,10 +61,6 @@ export default {
       type: Boolean,
       default: false,
     },
-    btnDisabled:{
-      type: Boolean,
-      default: false,
-    },
     btnType: {
       type: String,
       default: 'button'

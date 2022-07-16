@@ -8,7 +8,8 @@
         <form class="support__form" @submit.prevent="copyWallet">
           <app-input
           ref="walletInput"
-          :inputValue="info.wallet"
+          :value="info.wallet"
+          isReadonly
           ></app-input>
           <app-button
           :title="info.btnTitle"
@@ -29,6 +30,7 @@
 export default {
   data() {
     return {
+      isError: false,
       info:{
         title: 'Support our project',
         btnTitle: 'Copy',
@@ -37,10 +39,15 @@ export default {
     }
   },
   methods: {
-    copyWallet() {
-      console.log(this.$refs.walletInput)
-      // this.$refs.walletInput.focus()
-    }
+    async copyWallet() {
+      try {
+        await navigator.clipboard.writeText(this.info.wallet);
+        this.$refs.walletInput.$el.children[0].focus()
+      } catch($e) {
+        this.isError = true
+        this.$refs.walletInput.$el.children[0].focus()
+      }
+    },
   },
 }
 </script>

@@ -66,9 +66,10 @@
     :class='view ? viewStyle : ""'
     :type="type"
     @input='typedText'
-    :value='modelValue'
+    v-model="value"
     :required='inputRequired'
     ref='input'
+    :readonly="isReadonly"
     >
   </label>
 </template>
@@ -76,8 +77,9 @@
 <script>
 export default {
   props: {
-    modelValue:{
-
+    value: {
+      type: String,
+      required: true,
     },
     rows:{
       type: Number,
@@ -95,9 +97,9 @@ export default {
       type: String,
       required: false,
     },
-    inputDefaultValue:{
-      default: '',
-    },
+    // inputDefaultValue:{
+    //   default: '',
+    // },
     view: {
       type: String,
       required: false,
@@ -133,6 +135,10 @@ export default {
     verified:{
       type: Boolean,
       required: false,
+    },
+    isReadonly:{
+      type: Boolean,
+      default: false,
     }
   },
   data() {
@@ -141,9 +147,9 @@ export default {
     }
   },
   mounted () {
-    if (this.inputDefaultValue !== ''){
-      this.$refs.input.value = this.inputDefaultValue
-    }
+    // if (this.inputDefaultValue !== ''){
+    //   this.$refs.input.value = this.inputDefaultValue
+    // }
 
     if (this.radio & this.checkboxChecked){
       this.inputValue = this.checkboxValue
