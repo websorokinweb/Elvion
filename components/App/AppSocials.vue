@@ -1,10 +1,10 @@
 <template>
-  <ul class="social__list">
-    <li class="social__item"
+  <ul class="socials">
+    <li class="socials__item"
     v-for='social in socials'
     :key='social.type'
     >
-      <a class='social__link' :href='social.href'
+      <a class='socials__link' :href='social.href'
       :class='social.type == "telegram" ? "social__link--telegram" : ""'
       target="_blank"
       >

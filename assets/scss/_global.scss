@@ -47,7 +47,6 @@ body{
   min-width: 320px;
   color: $main;
   background-color: #1C233E;
-  padding-top: 100px;
 }
 
 img{
@@ -74,7 +73,7 @@ button{
 }
 
 .logo{
-  // max-width: 276px;
+  max-width: 335px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -223,11 +222,27 @@ button{
   align-items: center;
   &__item{
     & + &{
-      margin-left: 30px;
+      margin-left: 22px;
+    }
+    &:first-child{
+      img{
+        margin-right: 2px;
+      }
     }
   }
   &__link{
     transition: all .4s;
+    background: rgba(116, 188, 255, 0.2);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: unset;
+      height: unset;
+    }
     &:hover{
       transform: translateY(-10px);
     }

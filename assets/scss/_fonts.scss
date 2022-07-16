@@ -14,17 +14,17 @@
           url("./assets/fonts/BubblegumSans-Regular.ttf") format("truetype");
 }
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-weight: 700;
-//   font-style: normal;
-//   font-display: swap;
-//   src:    local("Roboto-Bold"),
-//           local("Roboto Bold"),
-//           url("./assets/fonts/Roboto-Bold.woff2") format("woff2"),
-//           url("./assets/fonts/Roboto-Bold.woff") format("woff"),
-//           url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:    local("Roboto-Bold"),
+          local("Roboto Bold"),
+          url("./assets/fonts/Roboto-Bold.woff2") format("woff2"),
+          url("./assets/fonts/Roboto-Bold.woff") format("woff"),
+          url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
+}
 
 
 // @font-face {

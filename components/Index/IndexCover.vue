@@ -1,8 +1,19 @@
 <template>
   <section class="cover">
+    <div class="cover__graphic">
+      <div class="cover__graphic-top">
+        <img src="@/assets/images/corner.png" alt="corner graphic">
+        <img src="@/assets/images/corner.png" alt="corner graphic">
+      </div>
+      <div class="cover__graphic-bottom">
+        <img src="@/assets/images/corner.png" alt="corner graphic">
+        <img src="@/assets/images/corner.png" alt="corner graphic">
+      </div>
+    </div>
     <div class="container">
       <div class="cover__inner">
         <div class="cover__info">
+          <!-- <img src="@/assets/images/cloud-graphic.png" alt="cloud graphic"> -->
           <p class="cover__title title title--main">
             {{ info.title }}
           </p>

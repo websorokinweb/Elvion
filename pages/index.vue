@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
     <index-cover></index-cover>
     <index-about></index-about>
     <index-character></index-character>
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import '~assets/scss/main.scss';
+<!-- <style lang="scss"> -->
+<!-- @import '~assets/scss/main.scss'; -->
 
-</style>
+<!-- </style> -->
