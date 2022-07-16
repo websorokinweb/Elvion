@@ -1,5 +1,5 @@
 <!-- <template>
-  <section class="collection">
+  <section class="collection" id="collection">
     <div class="container">
       <div class="collection__inner">
         <h6 class="roadmap__title title">

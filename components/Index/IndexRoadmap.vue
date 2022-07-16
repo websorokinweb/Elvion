@@ -1,8 +1,8 @@
 <template>
-  <section class="roadmap">
+  <section class="roadmap" id="roadmap">
     <div class="container">
       <div class="roadmap__inner">
-        <h6 class="roadmap__title title">
+        <h6 class="roadmap__title title title--wreath">
           {{ info.title }}        
         </h6>
         <p class="roadmap__descr">
@@ -18,13 +18,16 @@
             </div>
             <p class="roadmap__item-title">
               {{ item.title }}
+              <span>
+                {{ item.title }}
+              </span>
             </p>
             <ul class="roadmap__points">
               <li class="roadmap__point"
               v-for="point in item.list"
               :key="point"
+              v-html="point"
               >
-                {{ point }}
               </li>
             </ul>
           </li>
@@ -49,7 +52,7 @@ export default {
             list: [
               'Discussion of the idea',
               'Team formation.',
-              'Distribution of tasks and their execution',
+              'Distribution of tasks <br> and their execution',
             ],
           },
           { 
@@ -57,13 +60,13 @@ export default {
             title: 'Second point',
             img: require('@/assets/images/temp/roadmap-2.png'),
             list: [
-              'Development of the NFT collection',
+              'Development of the <br> NFT collection',
               'Game scenario development.',
             ],
           },
           { 
             id: 2,
-            title: 'The thirs point',
+            title: 'The third point',
             img: require('@/assets/images/temp/roadmap-3.png'),
             list: [
               'Launching social media',

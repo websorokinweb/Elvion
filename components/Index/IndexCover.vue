@@ -20,9 +20,10 @@
           <p class="cover__descr">
             {{ info.descr }}
           </p>
-          <button class="cover__btn" type='button'>
-            {{ info.btnTitle }}
-          </button>
+          <app-button
+          big
+          :title="info.btnTitle"
+          ></app-button>
         </div>
         <div class="cover__imgwrapper">
           <img :src="info.img" alt="">
