@@ -296,4 +296,9 @@ section{
       // color: rgba(#BEBEBE, .8);
     }
   }
+  &--error{
+    &:focus{
+      border-color: #9C4338;
+    }
+  }
 }

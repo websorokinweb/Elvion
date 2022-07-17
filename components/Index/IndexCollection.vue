@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <section class="collection" id="collection">
     <div class="container">
       <div class="collection__inner">
@@ -8,7 +8,7 @@
         <p class="roadmap__descr">
           {{ info.descr }}        
         </p>
-        <swiper
+        <!-- <swiper
         :slides-per-view="5"
         :space-between="30"
         @swiper="onSwiper"
@@ -20,16 +20,16 @@
           > 
             <img :src="item.img" alt="">
           </swiper-slide>
-        </swiper>
+        </swiper> -->
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'swiper-vue2'
+// import { Swiper, SwiperSlide } from 'swiper-vue2'
 
-import 'swiper/swiper-bundle.min.css'
+// import 'swiper/swiper-bundle.min.css'
 
 export default {
   data() {
@@ -82,17 +82,17 @@ export default {
       },
     }
   },
-  methods: {
-    onSwiper(swiper) {
-      console.log(swiper);
-    },
-    onSlideChange() {
-      console.log('slide change');
-    },
-  },
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
+  // methods: {
+  //   onSwiper(swiper) {
+  //     console.log(swiper);
+  //   },
+  //   onSlideChange() {
+  //     console.log('slide change');
+  //   },
+  // },
+  // components: {
+  //   Swiper,
+  //   SwiperSlide,
+  // },
 }
-</script> -->
+</script>

@@ -10,6 +10,7 @@
           ref="walletInput"
           :value="info.wallet"
           isReadonly
+          :view="isError ? 'error' : ''"
           ></app-input>
           <app-button
           :title="info.btnTitle"
