@@ -9,6 +9,10 @@
   width: 100%;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.26);
+  transition: all .4s;
+  &--floats{
+    background: #252643;
+  }
   &:before,
   &:after{
     content: '';
@@ -441,6 +445,8 @@
   padding: 32px 0 49px;
   background: #252643;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
   &__inner{
     display: flex;
     flex-direction: column;
@@ -481,6 +487,28 @@
       position: absolute;
       top: 22px;
       right: 46px;
+    }
+  }
+}
+
+.collection{
+  background-image: url('~@/assets/images/collection-bg.jpg');
+  padding: 32px 0 173px;
+  &__inner{
+    text-align: center;
+  }
+  &__descr{
+    max-width: 791px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+  .swiper-wrapper{
+    margin-left: -175px;
+  }
+  .swiper-slide{
+    // max-width: 350px;
+    img{
+      border-radius: 10px;
     }
   }
 }
