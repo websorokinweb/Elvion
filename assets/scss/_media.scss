@@ -144,7 +144,13 @@
       top: -20px;
     }
   }
-
+  .support{
+    padding: 32px 0 39px;
+  }
+  .support__title{
+    margin-bottom: 35px;
+  }
+  
   .about__inner{
     padding: 28px 0 50px;
   }
@@ -398,7 +404,26 @@
   .roadmap{
     padding: 32px 0 101px;
   }
-
+  .support{
+    .input{
+      padding: 27px 208px 27px 30px;
+      height: 94px;
+    }
+  }
+  .btn--copy {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 0 42px;
+    height: 56px;
+  }
+  .support__form .btn {
+    right: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+      margin-right: 10px;
+    }
+  }
 
 
 
@@ -552,9 +577,6 @@
     padding: 40px 0 120px;
     background-size: cover;
   }
-  .collection__inner{
-    transform: translateY(-75px);
-  }
   .play .list{
     margin-left: 0;
   }
@@ -625,6 +647,14 @@
   .cover__info {
     margin-bottom: 60px;
   }
+  .support__title:before, .support__title:after{
+    width: 46px;
+    height: 46px;
+    background-size: 100% 100%;
+  }
+  .support__title{
+    padding: 0 58px;
+  }
 }
 
 @media (max-width: 460px){
@@ -643,10 +673,21 @@
     font-size: 20px;
     line-height: 24px;
   }
-  // .about__title:before{
-  //   left: 13px;
-  //   top: -30px;
-  // }
+  .support__title {
+    padding: 0 28px;
+    font-size: 37px;
+    line-height: 47px;
+  }
+  .support__title:before, .support__title:after {
+    width: 41px;
+    height: 41px;
+  }
+  .support__title:after{
+    right: -25px;
+  }
+  .support__title:before{
+    left: -25px;
+  }
 
 
 
@@ -702,6 +743,10 @@
   // }
 }
 
+@media (max-width: 400px){
+  
+}
+
 @media (max-width: 380px){
   .cover__info {
     margin-bottom: 80px;
@@ -710,7 +755,21 @@
     max-width: 365px;
     margin-left: 0;
   }
-
+  .support__title {
+    padding: 0;
+    font-size: 37px;
+    line-height: 47px;
+  }
+  .support__title:before, .support__title:after {
+    width: 41px;
+    height: 41px;
+  }
+  .support__title:after{
+    right: -44px;
+  }
+  .support__title:before{
+    left: -44px;
+  }
 
 
 
@@ -752,6 +811,26 @@
   .character__title,
   .about__title{
     margin-bottom: 12px;
+  }
+  .support{
+    .input{
+      font-size: 22px;
+      line-height: 26px;
+      height: 84px;
+    }
+  }
+  .btn--copy {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .support__title{
+    padding: 0 37px;
+  }
+  .support__title:before{
+    left: -9px;
+  }
+  .support__title:after{
+    right: -9px;
   }
 
 
