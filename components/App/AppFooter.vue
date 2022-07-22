@@ -2,13 +2,13 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
+        <app-logo></app-logo>
         <p class="footer__copyright">
           <span class="footer__copyright--roboted">
             ©  
           </span>  
           {{ info.copyright }}
         </p>
-        <app-logo></app-logo>
         <app-socials></app-socials>
       </div>
     </div>

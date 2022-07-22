@@ -1,66 +1,38 @@
 @media (max-width: 1260px){
-  .game__inner{
-    padding-top: 0;
+
+}
+
+@media (max-width: 1200px){
+  .header__inner{
+    padding: 0 50px;
+  }
+  .header__nav-list{
+    margin-right: 15px;
+  }
+  .header__nav-item + .header__nav-item{
+    margin-left: 20px;
   }
 }
 
 @media (max-width: 1150px){
+
+
+
+
+
   .team__items{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
-  .prefooter__graphic img {
-    width: 1707px;
-  }
 }
 
-@media (max-width: 1080px){
-  .game__title{
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .game .btn--purple{
-    max-width: 200px;
-    font-size: 20px;
-    line-height: 24px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 1024px){
-  .header__nav-item + .header__nav-item{
-    margin-left: 20px;
-  }
-  .cover__videowrapper{
-    max-width: 425px;
-  }
-  .collection__list{
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-  }
-  .roadmap__imgwrapper{
-    img{
-      min-width: unset;
-      width: unset;
-    }
-  }
-  .roadmap__link{
-    pointer-events: all;
-  }
-  .game__imgwrapper{
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 900px){
-  .prefooter__graphic{
-    top: 86%;
+@media (max-width: 1050px){
+  .header__nav{
+    display: none;
   }
   .header__menu-btn{
     display: flex;
-  }
-  .header__nav{
-    display: none;
   }
   .header__menu{
     .header__nav{
@@ -85,8 +57,97 @@
       display: none;
     }
   }
+}
+
+@media (max-width: 1024px){
+  
+
+
+
+
+
+  .cover__videowrapper{
+    max-width: 425px;
+  }
+  .collection__list{
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
+  .roadmap__imgwrapper{
+    img{
+      min-width: unset;
+      width: unset;
+    }
+  }
+  .roadmap__link{
+    pointer-events: all;
+  }
+  .game__imgwrapper{
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 900px){
+  body{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .title{
+    font-size: 42px;
+    line-height: 60px;
+    &--main{
+      font-size: 58px;
+      line-height: 65px;
+    }
+  }
+  .cover,
+  .character{
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  .cover {
+    padding: unset;
+    padding-top: 130px;
+  }
+  .cover__imgwrapper {
+    margin-right: 0;
+    transform: translate(-10px, 9px);
+    max-width: 700px;
+    margin-top: -145px;
+  }
+  .cover__inner{
+    flex-direction: column;
+  }
+  .cover__descr{
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .character__inner{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .character__info{
+    margin-bottom: 30px;
+  }
+  .character__title{
+    margin-top: 30px;
+    &:before{
+      top: -20px;
+    }
+  }
+
+  .about__inner{
+    padding: 28px 0 50px;
+  }
+
+
+
+
+
+
+  
   .cover{
-    padding: 70px 0 50px;
     .btn--big{
       max-width: unset;
     }
@@ -106,57 +167,65 @@
     max-width: unset;
     text-align: center;
   }
-  .cover__videowrapper{
-    max-width: 550px;
-  }
-  .partners{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .play__inner{
-    flex-direction: column;
-    align-items: center;
-  }
-  .buy__inner{
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .buy__imgwrapper{
-    min-width: unset;
-  }
-  .buy__info{
-    margin-top: 20px;
-    margin-right: 0;
-  }
-  .section-imgwrapper{
-    max-height: unset;
-    max-width: 500px;
-  }
-  .play__imgwrapper{
-    margin-bottom: 20px;
-  }
-  .play{
-    padding: 60px 0 150px;
-  }
-  .play__info{
-    margin-left: 0;
-  }
-  .collection__inner{
-    transform: translateY(-70px);
-  }
-  .roadmap{
-    padding-bottom: 200px;
-  }
-  .cover .game__btn {
-    transform: translateY(78px);
-  }
-  .header__menu-btn--not-main{
-    display: none;
-  }
+  // .cover__videowrapper{
+  //   max-width: 550px;
+  // }
+  // .partners{
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  // }
+  // .play__inner{
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  // .buy__inner{
+  //   flex-direction: column-reverse;
+  //   align-items: center;
+  // }
+  // .buy__imgwrapper{
+  //   min-width: unset;
+  // }
+  // .buy__info{
+  //   margin-top: 20px;
+  //   margin-right: 0;
+  // }
+  // .section-imgwrapper{
+  //   max-height: unset;
+  //   max-width: 500px;
+  // }
+  // .play__imgwrapper{
+  //   margin-bottom: 20px;
+  // }
+  // .play{
+  //   padding: 60px 0 150px;
+  // }
+  // .play__info{
+  //   margin-left: 0;
+  // }
+  // .collection__inner{
+  //   transform: translateY(-70px);
+  // }
+  // .roadmap{
+  //   padding-bottom: 200px;
+  // }
+  // .cover .game__btn {
+  //   transform: translateY(78px);
+  // }
+  // .header__menu-btn--not-main{
+  //   display: none;
+  // }
 }
 
 @media (max-width: 850px){
+
+
+
+
+
+
+
+
   .collection__list{
     grid-template: none;
     grid-template-columns: repeat(3, 1fr);
@@ -188,9 +257,24 @@
 
 
 @media (max-width: 768px){
-  .cover{
-    background-size: cover;
+  .footer .logo{
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
+
+  .footer__inner{
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+
+
+
+
+
+
+
   .collection__text + .collection__text {
     margin-top: 20px;
   }
@@ -217,16 +301,13 @@
 
 
 @media (max-width: 700px) {
-  .footer__inner{
-    flex-direction: column;
+  .header .logo{
+    max-width: 270px;
   }
-  .footer__copyright{
-    margin-left: 0;
-    margin-top: 15px;
+  .header__inner {
+    padding: 0 38px;
   }
-  .footer{
-    padding: 20px 0;
-  }
+
 
   .buy__inner{
     margin-bottom: 40px;
@@ -243,9 +324,52 @@
 }
 
 @media (max-width: 600px){
-  .prefooter__graphic{
-    top: 80%;
+  .header__inner{
+    height: 80px;
   }
+  .header{
+    .btn{
+      display: none;
+    }
+  }
+  .header__menu{
+    .btn{
+      display: unset;
+    }
+  }
+  .cover:before {
+    top: 79px;
+    height: 3px;
+  }
+  .cover:after {
+    width: calc(100vw - 146px);
+  }
+  .header:before, .header:after{
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+  }
+  .cover__graphic img {
+    width: 80px;
+    height: 80px;
+  }
+  .cover__graphic-top {
+    margin-top: 80px;
+  }
+  .cover{
+    .btn{
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .cover__info{
+    margin-bottom: 50px;
+  }
+
+
+
+
+
   .partners{
     column-gap: 20px;
     row-gap: 15px;
@@ -291,38 +415,52 @@
 }
 
 @media (max-width: 550px){
+  .title--main{
+    font-size: 46px;
+    line-height: 53px;
+  }
+  .cover__descr {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  .btn--big {
+    height: 80px;
+    padding: 0 50px;
+    font-size: 42px;
+    line-height: 49px;
+  }
+
+
+
+
+  
+
+
   .team{
     padding: 40px 0 40px;
   }
   .team__title {
     margin-bottom: 40px;
   }
-  .btn--big{
-    height: 50px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-  .title{
-    font-size: 36px;
-    line-height: 44px;
-  }
+  // .btn--big{
+  //   height: 50px;
+  //   font-size: 24px;
+  //   line-height: 29px;
+  // }
+
+  // .title{
+  //   font-size: 36px;
+  //   line-height: 44px;
+  // }
   .tokenomics__total{
     margin-top: 20px;
     font-size: 26px;
     line-height: 32px;
   }
-  .header__inner{
-    height: 80px;
-  }
-  .header__buttonwrapper{
-    display: none;
-  }
-  .logo{
-    max-width: 220px;
-  }
-  body{
-    padding-top: 80px;
-  }
+  // .logo{
+  //   max-width: 220px;
+  // }
   .header__menu{
     .header__buttonwrapper{
       display: flex;
@@ -330,32 +468,29 @@
       align-items: center;
       margin-top: 13px;
     }
-    &--active{
-      padding-bottom: 20px;
-    }
-  }
-  .cover{
-    padding: 50px 0 30px;
+    // &--active{
+    //   padding-bottom: 20px;
+    // }
   }
   .cover__top{
     margin-bottom: 30px;
   }
-  .cover__title,
-  .play__title,
-  .collection__title,
-  .buy__title{
-    margin-bottom: 22px;
-  }
-  .roadmap__title{
-    margin-bottom: 15px;
-  }
-  .cover__descr,
-  .play__descr,
-  .buy__descr{
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 30px;
-  }
+  // .cover__title,
+  // .play__title,
+  // .collection__title,
+  // .buy__title{
+  //   margin-bottom: 22px;
+  // }
+  // .roadmap__title{
+  //   margin-bottom: 15px;
+  // }
+  // .cover__descr,
+  // .play__descr,
+  // .buy__descr{
+  //   font-size: 18px;
+  //   line-height: 22px;
+  //   margin-bottom: 30px;
+  // }
   .buy__buttonwrapper{
     flex-direction: column;
     .btn{
@@ -411,40 +546,60 @@
   .buy .list-item + .list-item {
     margin-top: 15px;
   }
-  .collection__list{
-    gap: 20px;
+  // .collection__list{
+  //   gap: 20px;
+  // }
+  // .collection__info{
+  //   font-size: 18px;
+  //   line-height: 22px;
+  // }
+  // .collection__text + .collection__text{
+  //   margin-top: 15px;
+  // }
+  // .roadmap{
+  //   padding-bottom: 170px;
+  // }
+  // .buy__bottom{
+  //   margin-top: -80px;
+  // }
+  // .cover .game__btn {
+  //   transform: translateY(40px);
+  // }
+  // .tokenomics__title {
+  //   margin-bottom: 40px;
+  // }
+  // .tokenomics__imgwrapper{
+  //   transform: translateX(-10px);
+  //   img{
+  //     width: calc(100vw - 10px);
+  //   }
+  // }
+  // .tokenomics {
+  //   margin-top: -28px;
+  // }
+}
+
+@media (max-width: 500px){
+  .footer__inner{
+    flex-direction: column-reverse;
   }
-  .collection__info{
-    font-size: 18px;
-    line-height: 22px;
+  .footer .socials{
+    margin: 10px 0 20px;
   }
-  .collection__text + .collection__text{
-    margin-top: 15px;
-  }
-  .roadmap{
-    padding-bottom: 170px;
-  }
-  .buy__bottom{
-    margin-top: -80px;
-  }
-  .cover .game__btn {
-    transform: translateY(40px);
-  }
-  .tokenomics__title {
-    margin-bottom: 40px;
-  }
-  .tokenomics__imgwrapper{
-    transform: translateX(-10px);
-    img{
-      width: calc(100vw - 10px);
-    }
-  }
-  .tokenomics {
-    margin-top: -28px;
+  .cover__info {
+    margin-bottom: 60px;
   }
 }
 
 @media (max-width: 460px){
+  .cover__info {
+    margin-bottom: 70px;
+  }
+
+
+
+
+
   .cover__buttonwrapper{
     flex-direction: column;
     .btn{
@@ -496,6 +651,16 @@
 }
 
 @media (max-width: 380px){
+  .cover__info {
+    margin-bottom: 80px;
+  }
+
+
+
+
+
+
+
   .header__wallets{
     font-size: 14px;
     line-height: 17px;
@@ -513,19 +678,32 @@
 }
 
 @media (max-width: 360px){
+  .cover{
+    .btn{
+      padding: 0 38px;
+    }
+  }
+  .cover__descr {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .cover__title {
+    margin-bottom: 10px;
+  }
+  .cover__descr{
+    margin-bottom: 10px;
+  }
+
+
+
+
+
   .title{
     font-size: 30px;
     line-height: 38px;
   }
-  .cover__videowrapper{
-    .play-pause-layer .mobile{
-      top: 40%;
-    }
-  }
-  .prefooter__graphic {
-    top: 63%;
-    img{
-      width: 2407px;
-    }
+  .title--main{
+    font-size: 32px;
+    line-height: 36px;
   }
 }

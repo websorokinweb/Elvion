@@ -12,6 +12,9 @@
   transition: all .4s;
   &--floats{
     background: #252643;
+    .header__menu{
+      background: linear-gradient(#252643 0%, #252643 50%);
+    }
   }
   &:before,
   &:after{
@@ -20,10 +23,11 @@
     width: 100px;
     height: 100px;
     background-image: url('~@/assets/images/corner.png');
+    pointer-events: none;
   }
   &:before{
     left: 0;
-    bottom: 0;
+    top: 0;
   }
   &:after{
     right: 0;
@@ -78,162 +82,6 @@
       }
     }
   }
-  &__buttonwrapper{
-    text-align: center;
-    // transform: translateY(7px);
-    display: flex;
-    flex-direction: column;
-    .btn{
-      padding: 0 27px;
-    }
-  }
-  &__button-descr{
-    font-size: 10px;
-    line-height: 12px;
-    color: $main;
-    margin-top: 4px;
-    font-weight: 400;
-    transform: translateY(3px);
-    transition: all .3s;
-    &:hover{
-      opacity: .8;
-    }
-  }
-  &__blockchain{
-    margin-right: 25px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 165px;
-    width: 100%;
-    background: #322361;
-    height: 40px;
-    border-radius: 20px;
-    padding: 2px;
-    background-clip: padding-box;
-    border: solid 2px transparent;
-    font-size: 12px;
-    line-height: 14px;
-    font-family: "Roboto", sans-serif;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -2px;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #EE4EFE 0%, #853CFF 100%);
-    }
-  }
-  &__blockchain-icon{
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    left: 2px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // color: $addit;
-    background: $secondary;
-    padding: 5px 6px;
-    margin-left: 0;
-    margin-right: auto;
-    font-size: 18px;
-    line-height: 21px;
-    img{
-      object-fit: contain;
-    }
-  }
-  &__blockchain-name{
-    color: $secondary;
-  }
-  &__blockchain-arrow{
-    position: absolute;
-    top: 13px;
-    right: 14px;
-  }
-  &__wallets{
-    position: relative;
-    font-family: "Roboto", sans-serif;
-    background: #322361;
-    padding-left: 21px;
-    padding-right: 21px;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 500;
-    position: relative;
-    background-clip: padding-box;
-    border: solid 2px transparent;
-    height: 40px;
-    border-radius: 20px;
-    color: #fff;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -2px;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #EE4EFE 0%, #853CFF 100%);
-    }
-    &:after{
-      transition: all .4s;
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -2px;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #EE4EFE 0%, #853CFF 100%);
-    }
-    &--connected{
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-      line-height: 14px;
-      .wallets{
-        min-width: 100%;
-        .btn{
-          width: 100%;
-          min-width: 150px;
-        }
-      }
-    }
-  }
-  &__wallets-imgwrapper{
-    margin-left: 10px;
-    display: flex;
-    img{
-      transition: all .4s;
-    }
-    &:hover{
-      img{
-        opacity: .7;
-      }
-    }
-  }
-  &__profile{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    margin-left: 25px;
-    background: linear-gradient(135deg, #F24EFE 0%, #813BFF 100%);
-    transition: all .4s;
-    border-radius: 50%;
-  }
-  &__profile-logo{
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-  }
   &__menu-btn{
     display: none;
     flex-direction: column;
@@ -252,26 +100,21 @@
   &__menu{
     height: 0;
     opacity: 0;
-    transition: opacity .2s, height .4s;
+    transition: background .6s, opacity .2s, height .4s;
     pointer-events: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.26) 0%, #252643 40%);
+    text-align: center;
     .header__buttonwrapper{
       display: none;
+    }
+    .btn{
+      display: none;
+      margin: 15px 0;
     }
     &--active{
       height: unset;
       opacity: 1;
       pointer-events: all;
-    }
-    &--not-main{
-      display: flex;
-      justify-content: space-around;
-      .header__blockchain,
-      .header__wallets,
-      .header__profile{
-        display: none;
-        margin-left: 0;
-        margin-right: 0;
-      }
     }
   }
 }
@@ -319,6 +162,8 @@
   &__graphic-bottom{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
     img:last-child{
       transform: rotate(270deg);
     }
@@ -368,6 +213,7 @@
     width: 100%;
     margin-right: -301px;
     transform: translate(-95px, 9px);
+    pointer-events: none;
   }
 }
 
@@ -377,11 +223,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row-reverse;
+    // flex-direction: row-reverse;
     padding: 38px 0 130px;
   }
   &__info{
     margin-top: 25px;
+    max-width: 532px;
+    width: 100%;
+    margin-right: 30px;
   }
   &__title{
     position: relative;
@@ -406,8 +255,6 @@
   }
   &__imgwrapper{
     max-width: 540px;
-    width: 100%;
-    margin-right: 30px;
   }
 }
 

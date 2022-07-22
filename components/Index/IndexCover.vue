@@ -1,5 +1,5 @@
 <template>
-  <section class="cover">
+  <section class="cover" id="cover">
     <div class="cover__graphic">
       <div class="cover__graphic-top">
         <img src="@/assets/images/corner.png" alt="corner graphic">

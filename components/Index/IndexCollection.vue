@@ -19,6 +19,17 @@
       > 
         <img :src="item.img" alt="">
       </swiper-slide>
+      <!-- <div class="swiper-pagination" slot="pagination"></div> -->
+      <!-- <template v-slot:pagination>
+        <div class="swiper-pagination"></div>
+      </template> -->
+
+      <div
+        class="swiper-pagination"
+        v-for="(item,index) in info.items"
+        :key="index"
+        slot="pagination"
+      ></div>
 
       <!-- <template v-slot:button-prev>
         <div
@@ -63,10 +74,14 @@ export default {
         // centeredSlides: true,
         spaceBetween: 30,
         loop: true,
-        // navigation: {
-          // nextEl: ".swiper-button-next",
-          // prevEl: ".swiper-button-prev",
+        // pagination: {
+          // el: '.swiper-pagination'
         // },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "bullets"
+        },
       },
       info:{
         title: 'NFT Collection',

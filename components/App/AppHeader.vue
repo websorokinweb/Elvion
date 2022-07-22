@@ -3,56 +3,50 @@
     <div class="container">
       <div class="header__inner">
         <app-logo></app-logo>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"
-            v-for='item in links'
-            :key='item.label'
-            >
-              <a class="header__nav-link nav-link" :href="'#' + item.href"
-              @click.prevent='scrollToSection(item.href)'
-              >
-                {{ item.label }}
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <header-nav></header-nav>
         <app-button
         title="Donate project"
         ></app-button>
+        <button class="header__menu-btn btn-clear"
+        @click='toggleMenu()'
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </div>
+    </div>
+    <div class="header__menu"
+    :class='[menuIsOpen]'
+    @click='toggleMenu()'
+    >
+      <header-nav></header-nav>
+      <app-button
+      title="Donate project"
+      ></app-button>
     </div>
   </header>
 </template>
 
 <script>
-import scrollToSection from '@/mixins/scrollToSection'
-
 export default {
   data() {
     return {
-      links:[
-        {
-          label: 'About',
-          href: 'about',
-        },
-        {
-          label: 'Development',
-          href: 'development',
-        },
-        {
-          label: 'NFT',
-          href: 'collection',
-        },
-        {
-          label: 'Roadmap',
-          href: 'roadmap',
-        },
-      ],
+      menuOpened: false,
     }
   },
-  mixins:[
-    scrollToSection,
-  ],
+  computed: {
+    menuIsOpen(){
+      if(this.menuOpened){
+        return "header__menu--active"
+      }
+      return ""
+    },
+  },
+  methods: {
+    toggleMenu(){
+      this.menuOpened = !this.menuOpened
+    },
+  },
 }
 </script>

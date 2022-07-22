@@ -25,7 +25,7 @@ export default {
   methods: {
     handleScrollHeader () {
       let scroll = window.pageYOffset;
-      if (scroll >= 100) {
+      if (scroll >= 80) {
         this.headerFloats = true
       } else {
         this.headerFloats = false
