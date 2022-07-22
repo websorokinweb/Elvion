@@ -10,40 +10,20 @@
         </p>
       </div>
     </div>
-    <swiper :options="swiperOption" ref="swiper">
-      <!-- Loops through item data and creates a carousel item -->
-
-      <swiper-slide
-      v-for="item in info.items"
-      :key="item.id"
-      > 
-        <img :src="item.img" alt="">
-      </swiper-slide>
-      <!-- <div class="swiper-pagination" slot="pagination"></div> -->
-      <!-- <template v-slot:pagination>
-        <div class="swiper-pagination"></div>
-      </template> -->
-
-      <div
-        class="swiper-pagination"
-        v-for="(item,index) in info.items"
-        :key="index"
-        slot="pagination"
-      ></div>
-
-      <!-- <template v-slot:button-prev>
-        <div
-          @click="$refs.swiper.swiperInstance.slidePrev()"
-          class="swiper-button-prev"
-        ></div>
-      </template>
-      <template v-slot:button-next>
-        <div
-          @click="$refs.swiper.swiperInstance.slideNext()"
-          class="swiper-button-next"
-        ></div>
-      </template> -->
-    </swiper>
+    <div ref="swiper" class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"
+        v-for="item in info.items"
+        :key="item.id"
+        > 
+          <img :src="item.img" alt="">
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
     <!-- <swiper
     :slides-per-view="5"
     :space-between="30"
@@ -61,28 +41,46 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "swiper/swiper-bundle.min.css";
+import Swiper from 'swiper/js/swiper.esm.bundle';
+import 'swiper/css/swiper.min.css'
 
 export default {
+  mounted() {
+    new Swiper(this.$refs.swiper, {
+      // configure Swiper to use modules
+      // modules: [Pagination],
+      // Optional parameters
+      loop: true,
+      slidesPerView: 4,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+      loop: true,
+      clickable: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    })
+  },
   data() {
     return {
-      swiperOption: {
-        slidesPerView: 4,
-        // slidesPerView: 'auto',
-        // centerInsufficientSlides: true,
-        // centeredSlides: true,
-        spaceBetween: 30,
-        loop: true,
-        // pagination: {
-          // el: '.swiper-pagination'
-        // },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          type: "bullets"
-        },
-      },
+      // swiperOption: {
+      //   slidesPerView: 4,
+      //   // slidesPerView: 'auto',
+      //   // centerInsufficientSlides: true,
+      //   // centeredSlides: true,
+      //   spaceBetween: 30,
+      //   loop: true,
+      //   // pagination: {
+      //     // el: '.swiper-pagination'
+      //   // },
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //     type: "bullets"
+      //   },
+      // },
       info:{
         title: 'NFT Collection',
         descr: ' We are a team of creative people who want to create a modern, high-quality and interesting project.',
@@ -141,7 +139,7 @@ export default {
   // },
   components: {
     Swiper,
-    SwiperSlide,
+    // Slide,
   },
 }
 </script>

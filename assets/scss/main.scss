@@ -353,6 +353,90 @@
     margin: 0 auto;
     margin-bottom: 34px;
   }
+  .swiper{
+    position: relative;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -66px;
+  }
+  .swiper-pagination-bullets{
+    position: relative;
+    // &:before,
+    // &:after{
+    //   content: '';
+    //   position: absolute;
+    //   width: 271px;
+    //   height: 86px;
+    //   background-image: url('~@/assets/images/pagination-decoration.png');
+    //   pointer-events: none;
+    // }
+    // &:before{
+    //   left: 0;
+    //   top: 0;
+    // }
+    // &:after{
+    //   right: 0;
+    //   top: 0;
+    //   transform: rotate(180deg);
+    // }
+  }
+  .swiper-pagination-bullet{
+    width: 43px;
+    height: 43px;
+    opacity: 1;
+    background: url('~@/assets/images/pagination-bullet.png');
+    background-size: 100% 100%;
+    position: relative;
+    // Active bullet state
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url('~@/assets/images/pagination-bullet-active.png');
+      background-size: 100% 100%;
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      transition: all .3s;
+    }
+    &-active{
+      &:before{
+        opacity: 1;
+      }
+    }
+
+    // Pagination decoration
+    &:first-child,
+    &:last-child{
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 271px;
+        height: 86px;
+        background-image: url('~@/assets/images/pagination-decoration.png');
+        pointer-events: none;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &:first-child{
+      &:after{
+        left: -289px;
+      }
+    }
+    &:last-child{
+      &:after{
+        right: -289px;
+        transform: scale(-1) translateY(-50%);
+      }
+    }
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 20px;
+  }
   .swiper-wrapper{
     margin-left: -175px;
   }
