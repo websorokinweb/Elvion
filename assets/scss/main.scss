@@ -247,7 +247,7 @@
     }
   }
   &__title{
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
   &__descr{
     color: #AFAFAF;
@@ -285,6 +285,10 @@
   }
   &__info{
     max-width: 540px;
+  }
+  &__descr{
+    position: relative;
+    z-index: 1;
   }
 }
 

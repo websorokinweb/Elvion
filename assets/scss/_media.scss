@@ -100,7 +100,9 @@
     }
   }
   .cover,
-  .character{
+  .about,
+  .character,
+  .roadmap{
     background-size: auto 100%;
     background-position: center;
   }
@@ -115,6 +117,7 @@
     max-width: 700px;
     margin-top: -145px;
   }
+  .about__inner,
   .cover__inner{
     flex-direction: column;
   }
@@ -127,6 +130,11 @@
     align-items: center;
     padding: 0;
   }
+  .about__info{
+    width: unset;
+    margin-right: 0;
+  }
+  .about__info,
   .character__info{
     margin-bottom: 30px;
   }
@@ -218,7 +226,19 @@
 }
 
 @media (max-width: 850px){
-
+  .roadmap__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  .roadmap__item{
+    align-items: center;
+  }
+  .roadmap__points {
+    margin-left: 71px;
+    max-width: 297px;
+    width: 100%;
+  }
 
 
 
@@ -307,6 +327,11 @@
   .header__inner {
     padding: 0 38px;
   }
+  .roadmap__list{
+    transform: translateX(-20px);
+  }
+
+
 
 
   .buy__inner{
@@ -364,6 +389,14 @@
   }
   .cover__info{
     margin-bottom: 50px;
+  }
+  .roadmap__list{
+    grid-template-columns: 1fr;
+    transform: translateX(-15px);
+    row-gap: 30px;
+  }
+  .roadmap{
+    padding: 32px 0 101px;
   }
 
 
@@ -429,6 +462,9 @@
     padding: 0 50px;
     font-size: 42px;
     line-height: 49px;
+  }
+  .title{
+    line-height: 52px;
   }
 
 
@@ -595,6 +631,22 @@
   .cover__info {
     margin-bottom: 70px;
   }
+  .roadmap__list{
+    transform: unset;
+  }
+  .roadmap__points{
+    max-width: 345px;
+    margin-left: 10px;
+    transform: unset;
+  }
+  .roadmap__point {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  // .about__title:before{
+  //   left: 13px;
+  //   top: -30px;
+  // }
 
 
 
@@ -654,6 +706,10 @@
   .cover__info {
     margin-bottom: 80px;
   }
+  .roadmap__points{
+    max-width: 365px;
+    margin-left: 0;
+  }
 
 
 
@@ -692,6 +748,10 @@
   }
   .cover__descr{
     margin-bottom: 10px;
+  }
+  .character__title,
+  .about__title{
+    margin-bottom: 12px;
   }
 
 

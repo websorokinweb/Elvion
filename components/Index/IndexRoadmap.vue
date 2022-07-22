@@ -52,7 +52,8 @@ export default {
             list: [
               'Discussion of the idea',
               'Team formation.',
-              'Distribution of tasks <br> and their execution',
+              // 'Distribution of tasks <br> and their execution',
+              'Distribution of tasks and their execution',
             ],
           },
           { 
@@ -60,7 +61,8 @@ export default {
             title: 'Second point',
             img: require('@/assets/images/temp/roadmap-2.png'),
             list: [
-              'Development of the <br> NFT collection',
+              // 'Development of the <br> NFT collection',
+              'Development of the NFT collection',
               'Game scenario development.',
             ],
           },
