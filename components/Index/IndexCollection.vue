@@ -10,19 +10,21 @@
         </p>
       </div>
     </div>
-    <div ref="swiper" class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"
-        v-for="item in info.items"
-        :key="item.id"
-        > 
-          <img :src="item.img" alt="">
+    <div class="collection__swiper-overwrapper">
+      <div ref="swiper" class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"
+          v-for="item in info.items"
+          :key="item.id"
+          > 
+            <img :src="item.img" alt="">
+          </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
     </div>
     <!-- <swiper
     :slides-per-view="5"
@@ -52,15 +54,47 @@ export default {
       // Optional parameters
       loop: true,
       slidesPerView: 4,
-      slidesPerGroup: 3,
+      slidesPerGroup: 1,
       spaceBetween: 30,
       loop: true,
-      clickable: true,
 
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
+
+      breakpoints: {
+        // 320: {
+        //   slidesPerView: 1,
+        //   spaceBetween: 20,
+        // },
+        320: {
+          slidesPerView: 1,
+        },
+        460: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1100: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        // 1550: {
+          
+        // },
+        // 480: {
+          // slidesPerView: 3,
+          // spaceBetween: 30
+        // },
+        // 640: {
+          // slidesPerView: 4,
+          // spaceBetween: 40
+        // }
+      }
     })
   },
   data() {
@@ -117,14 +151,14 @@ export default {
             id: 7, 
             img: require('@/assets/images/temp/collection-3.jpg')
           },
-          {
-            id: 8, 
-            img: require('@/assets/images/temp/collection-4.jpg')
-          },
-          {
-            id: 9, 
-            img: require('@/assets/images/temp/collection-5.jpg')
-          },
+          // {
+          //   id: 8, 
+          //   img: require('@/assets/images/temp/collection-4.jpg')
+          // },
+          // {
+          //   id: 9, 
+          //   img: require('@/assets/images/temp/collection-5.jpg')
+          // },
         ],
       },
     }
