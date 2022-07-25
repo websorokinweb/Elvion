@@ -16,19 +16,6 @@
   }
 }
 
-@media (max-width: 1150px){
-
-
-
-
-
-  .team__items{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-}
-
 @media (max-width: 1100px){
   .collection .swiper-pagination-bullet:first-child:after, .collection .swiper-pagination-bullet:last-child:after{
     width: 200px;
@@ -74,33 +61,6 @@
     &:after{
       display: none;
     }
-  }
-}
-
-@media (max-width: 1024px){
-  
-
-
-
-
-
-  .cover__videowrapper{
-    max-width: 425px;
-  }
-  .collection__list{
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-  }
-  .roadmap__imgwrapper{
-    img{
-      min-width: unset;
-      width: unset;
-    }
-  }
-  .roadmap__link{
-    pointer-events: all;
-  }
-  .game__imgwrapper{
-    max-width: 280px;
   }
 }
 
@@ -189,13 +149,6 @@
   .about__inner{
     padding: 28px 0 50px;
   }
-
-
-
-
-
-
-  
   .cover{
     .btn--big{
       max-width: unset;
@@ -216,54 +169,6 @@
     max-width: unset;
     text-align: center;
   }
-  // .cover__videowrapper{
-  //   max-width: 550px;
-  // }
-  // .partners{
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  // }
-  // .play__inner{
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-  // .buy__inner{
-  //   flex-direction: column-reverse;
-  //   align-items: center;
-  // }
-  // .buy__imgwrapper{
-  //   min-width: unset;
-  // }
-  // .buy__info{
-  //   margin-top: 20px;
-  //   margin-right: 0;
-  // }
-  // .section-imgwrapper{
-  //   max-height: unset;
-  //   max-width: 500px;
-  // }
-  // .play__imgwrapper{
-  //   margin-bottom: 20px;
-  // }
-  // .play{
-  //   padding: 60px 0 150px;
-  // }
-  // .play__info{
-  //   margin-left: 0;
-  // }
-  // .collection__inner{
-  //   transform: translateY(-70px);
-  // }
-  // .roadmap{
-  //   padding-bottom: 200px;
-  // }
-  // .cover .game__btn {
-  //   transform: translateY(78px);
-  // }
-  // .header__menu-btn--not-main{
-  //   display: none;
-  // }
 }
 
 @media (max-width: 850px){
@@ -288,40 +193,6 @@
   }
   .collection .swiper-pagination-bullet:last-child:after {
     right: -163px;
-  }
-
-
-
-
-
-
-
-  .collection__list{
-    grid-template: none;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: unset;
-  }
-  .collection__info{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: unset;
-    grid-row-end: unset;
-    grid-row: 4;
-    margin-bottom: 25px;
-  }
-  .game__inner{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  .game__wrapper{
-    position: relative;
-  }
-  .game__inner{
-    padding-bottom: 20px;
-    margin-top: -40px;
-    min-height: 473px;
   }
 }
 
@@ -354,45 +225,6 @@
   .collection .swiper-pagination-bullet:last-child:after {
     display: none;
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .collection__text + .collection__text {
-    margin-top: 20px;
-  }
-  .header__menu-btn--not-main{
-    display: flex;
-  }
-  .header__inner{
-    .header__blockchain{
-      display: none;
-    }
-  }
-  .header__menu--not-main.header__menu--active{
-    padding: 0 0 15px;
-  }
-  .header__menu--not-main{
-    .header__blockchain{
-      display: flex;
-    }
-  }
-  .blockchains{
-    right: unset;
-  }
 }
 
 
@@ -405,22 +237,6 @@
   }
   .roadmap__list{
     transform: translateX(-20px);
-  }
-
-
-
-
-  .buy__inner{
-    margin-bottom: 40px;
-  }
-  .buy__bottom{
-    padding: 35px 0;
-    margin-top: -70px;
-  }
-  .buy__bottom-title{
-    margin-bottom: 35px;
-    font-size: 30px;
-    line-height: 38px;
   }
 }
 
@@ -497,52 +313,6 @@
   .collection .swiper-wrapper {
     margin-left: -163px;
   }
-
-
-
-
-  .partners{
-    column-gap: 20px;
-    row-gap: 15px;
-  }
-  .partners__item{
-    max-width: 46%;
-  }
-  .collection__list{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .collection__info{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 5;
-  }
-  .roadmap__title-line{
-    width: calc((100vw / 2) - 150px);
-  }
-  .roadmap,
-  .buy{
-    background-size: cover;
-  }
-  .header__inner{
-    .header__wallets{
-      display: none;
-    }
-  }
-  .header__menu{
-    .header__wallets{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  .blockchains{
-    right: unset;
-    left: 0;
-  }
-  .blockchains__items{
-    grid-template-columns: repeat(3, 80px);
-    gap: 12px;
-  }
 }
 
 @media (max-width: 550px){
@@ -564,150 +334,6 @@
   .title{
     line-height: 52px;
   }
-
-
-
-
-  
-
-
-  .team{
-    padding: 40px 0 40px;
-  }
-  .team__title {
-    margin-bottom: 40px;
-  }
-  // .btn--big{
-  //   height: 50px;
-  //   font-size: 24px;
-  //   line-height: 29px;
-  // }
-
-  // .title{
-  //   font-size: 36px;
-  //   line-height: 44px;
-  // }
-  .tokenomics__total{
-    margin-top: 20px;
-    font-size: 26px;
-    line-height: 32px;
-  }
-  // .logo{
-  //   max-width: 220px;
-  // }
-  .header__menu{
-    .header__buttonwrapper{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 13px;
-    }
-    // &--active{
-    //   padding-bottom: 20px;
-    // }
-  }
-  .cover__top{
-    margin-bottom: 30px;
-  }
-  // .cover__title,
-  // .play__title,
-  // .collection__title,
-  // .buy__title{
-  //   margin-bottom: 22px;
-  // }
-  // .roadmap__title{
-  //   margin-bottom: 15px;
-  // }
-  // .cover__descr,
-  // .play__descr,
-  // .buy__descr{
-  //   font-size: 18px;
-  //   line-height: 22px;
-  //   margin-bottom: 30px;
-  // }
-  .buy__buttonwrapper{
-    flex-direction: column;
-    .btn{
-      max-width: unset;
-    }
-    .btn:last-child{
-      margin-left: 0;
-      margin-top: 15px;
-    }
-  }
-  .team__name{
-    font-size: 28px;
-    line-height: 32px;
-  }
-  .team__position{
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .cover__buttonwrapper .btn + .btn{
-    margin-left: 20px;
-  }
-  .play {
-    padding: 40px 0 120px;
-    background-size: cover;
-  }
-  .play .list{
-    margin-left: 0;
-  }
-  .list{
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .list-item{
-    padding-left: 31px;
-    &:before{
-      width: 16px;
-      height: 16px;
-      top: 2px;
-    }
-  }
-  .list--numbered{
-    .list-item{
-      &:before{
-        width: 22px;
-        height: 22px;
-        top: -1px;
-      }
-    }
-  }
-  .buy .list-item + .list-item {
-    margin-top: 15px;
-  }
-  // .collection__list{
-  //   gap: 20px;
-  // }
-  // .collection__info{
-  //   font-size: 18px;
-  //   line-height: 22px;
-  // }
-  // .collection__text + .collection__text{
-  //   margin-top: 15px;
-  // }
-  // .roadmap{
-  //   padding-bottom: 170px;
-  // }
-  // .buy__bottom{
-  //   margin-top: -80px;
-  // }
-  // .cover .game__btn {
-  //   transform: translateY(40px);
-  // }
-  // .tokenomics__title {
-  //   margin-bottom: 40px;
-  // }
-  // .tokenomics__imgwrapper{
-  //   transform: translateX(-10px);
-  //   img{
-  //     width: calc(100vw - 10px);
-  //   }
-  // }
-  // .tokenomics {
-  //   margin-top: -28px;
-  // }
 }
 
 @media (max-width: 500px){
@@ -768,58 +394,6 @@
   .collection__swiper-overwrapper{
     padding: 0 15px;
   }
-
-
-
-
-  .cover__buttonwrapper{
-    flex-direction: column;
-    .btn{
-      max-width: unset;
-    }
-    .btn:last-child{
-      margin-left: 0;
-      margin-top: 18px;
-    }
-  } 
-  .roadmap__title-line{
-    width: calc((100vw / 2) - 120px);
-  }
-  .header__inner{
-    .header__profile{
-      display: none;
-    }
-  }
-  .header__menu--not-main{
-    flex-wrap: wrap;
-    gap: 8px;
-    .header__profile{
-      display: flex;
-    }
-    .header__blockchain,
-    .header__wallets{
-      width: 45%;
-      max-width: unset;
-    }
-  }
-  .profile{
-    right: unset;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .team__item{
-    max-width: 160px;
-  }
-  .tokenomics__total{
-    font-size: 20px;
-    line-height: 24px;
-  }
-  // .tokenomics__imgwrapper{
-    // img{
-      // transform: translateX(-15px);
-      // width: 100vw;
-    // }
-  // }
 }
 
 @media (max-width: 400px){
@@ -855,26 +429,6 @@
   }
   .support__title:before{
     left: -44px;
-  }
-
-
-
-
-
-
-  .header__wallets{
-    font-size: 14px;
-    line-height: 17px;
-    &--connected{
-      font-size: 12px;
-      line-height: 14px;
-    }
-  }
-  .profile__form{
-    padding: 0;
-  }
-  .profile{
-    min-width: 300px;
   }
 }
 
@@ -918,11 +472,6 @@
   .support__title:after{
     right: -9px;
   }
-
-
-
-
-
   .title{
     font-size: 30px;
     line-height: 38px;

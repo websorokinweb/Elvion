@@ -120,45 +120,37 @@ export default {
         descr: ' We are a team of creative people who want to create a modern, high-quality and interesting project.',
         items:[
           {
-            id: 0, 
-            img: require('@/assets/images/temp/collection-1.jpg')
-          },
-          {
             id: 1, 
-            img: require('@/assets/images/temp/collection-2.jpg')
+            img: require('@/assets/images/temp/collection-1.jpg')
           },
           {
             id: 2, 
-            img: require('@/assets/images/temp/collection-3.jpg')
-          },
-          {
-            id: 3, 
-            img: require('@/assets/images/temp/collection-4.jpg')
-          },
-          {
-            id: 4, 
-            img: require('@/assets/images/temp/collection-5.jpg')
-          },
-          {
-            id: 5, 
-            img: require('@/assets/images/temp/collection-1.jpg')
-          },
-          {
-            id: 6, 
             img: require('@/assets/images/temp/collection-2.jpg')
           },
           {
-            id: 7, 
+            id: 3, 
             img: require('@/assets/images/temp/collection-3.jpg')
           },
-          // {
-          //   id: 8, 
-          //   img: require('@/assets/images/temp/collection-4.jpg')
-          // },
-          // {
-          //   id: 9, 
-          //   img: require('@/assets/images/temp/collection-5.jpg')
-          // },
+          {
+            id: 4,
+            img: require('@/assets/images/temp/collection-4.jpg')
+          },
+          {
+            id: 5, 
+            img: require('@/assets/images/temp/collection-5.jpg')
+          },
+          {
+            id: 6, 
+            img: require('@/assets/images/temp/collection-6.jpg')
+          },
+          {
+            id: 7, 
+            img: require('@/assets/images/temp/collection-7.jpg')
+          },
+          {
+            id: 8, 
+            img: require('@/assets/images/temp/collection-8.jpg')
+          },
         ],
       },
     }
