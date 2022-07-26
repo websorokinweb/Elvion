@@ -20,17 +20,17 @@ export default {
     return {
       socials:[
         {
-          href: 'https://www.instagram.com',  
+          href: 'https://www.instagram.com/legendofelvion',  
           type: 'telegram',
           img: require('@/assets/images/telegram.svg'),
         },
         {
-          href: '#',
+          href: 'https://twitter.com/legendofelvion?t=8Ubs2nNTjAmmccECXXWWaQ&s=35',
           type: 'twitter',
           img: require('@/assets/images/twitter.svg'),
         },
         {
-          href: '#',
+          href: 'https://discord.gg/2SB3zwScu9',
           type: 'discord',
           img: require('@/assets/images/discord.svg'),
         },
