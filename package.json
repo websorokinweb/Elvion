@@ -20,5 +20,9 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0"
+  }
 }
