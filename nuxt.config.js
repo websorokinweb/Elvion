@@ -1,9 +1,9 @@
 export default {
   // Deploy static settings
   target: 'static',
-  // router: {
-  //   base: '/Elvion/'
-  // },
+  router: {
+    base: '/Elvion/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
