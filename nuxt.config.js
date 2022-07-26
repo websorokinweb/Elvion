@@ -38,8 +38,13 @@ export default {
   buildModules: [
   ],
 
+  serverMiddleware: {
+    '/_ipx': '~/server/middleware/ipx.js'
+  },
+  
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/image',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

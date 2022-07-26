@@ -2,18 +2,17 @@
   <section class="cover" id="cover">
     <div class="cover__graphic">
       <div class="cover__graphic-top">
-        <img src="@/assets/images/corner.png" alt="corner graphic">
-        <img src="@/assets/images/corner.png" alt="corner graphic">
+        <nuxt-img format="webp" src="@/assets/images/corner.png" alt="corner graphic" />
+        <nuxt-img format="webp" src="@/assets/images/corner.png" alt="corner graphic" />
       </div>
       <div class="cover__graphic-bottom">
-        <img src="@/assets/images/corner.png" alt="corner graphic">
-        <img src="@/assets/images/corner.png" alt="corner graphic">
+        <nuxt-img format="webp" src="@/assets/images/corner.png" alt="corner graphic" />
+        <nuxt-img format="webp" src="@/assets/images/corner.png" alt="corner graphic" />
       </div>
     </div>
     <div class="container">
       <div class="cover__inner">
         <div class="cover__info">
-          <!-- <img src="@/assets/images/cloud-graphic.png" alt="cloud graphic"> -->
           <p class="cover__title title title--main">
             {{ info.title }}
           </p>
@@ -26,7 +25,7 @@
           ></app-button>
         </div>
         <div class="cover__imgwrapper">
-          <img :src="info.img" alt="">
+          <nuxt-img format="webp" :src="info.img" alt="cover graphic" />
         </div>
       </div>
     </div>

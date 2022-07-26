@@ -14,7 +14,7 @@
           :key="item.id"
           >
             <div class="roadmap__list-img">
-              <img :src="item.img" alt="">
+              <nuxt-img format="webp" :src="item.img" alt="roadmap graphic" />
             </div>
             <p class="roadmap__item-title">
               {{ item.title }}

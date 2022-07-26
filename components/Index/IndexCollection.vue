@@ -19,7 +19,7 @@
           v-for="item in info.items"
           :key="item.id"
           > 
-            <img :src="item.img" alt="">
+            <nuxt-img format="webp" :src="item.img" alt="nft collection image" />
           </div>
         </div>
         <!-- If we need pagination -->

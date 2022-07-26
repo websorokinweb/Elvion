@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="about__imgwrapper">
-          <img :src="info.img" alt="">
+          <nuxt-img format="webp" :src="info.img" alt="about graphic" />
         </div>
       </div>
     </div>
