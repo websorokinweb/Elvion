@@ -208,11 +208,11 @@ button{
     & + &{
       margin-left: 22px;
     }
-    &:first-child{
-      img{
-        margin-right: 2px;
-      }
-    }
+    // &:first-child{
+    //   img{
+    //     margin-right: 2px;
+    //   }
+    // }
   }
   &__link{
     transition: all .4s;

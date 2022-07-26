@@ -22,7 +22,7 @@ export default {
         {
           href: 'https://www.instagram.com/legendofelvion',  
           type: 'telegram',
-          img: require('@/assets/images/telegram.svg'),
+          img: require('@/assets/images/instagram.svg'),
         },
         {
           href: 'https://twitter.com/legendofelvion?t=8Ubs2nNTjAmmccECXXWWaQ&s=35',
