@@ -1,9 +1,9 @@
 export default {
   // Deploy static settings
   target: 'static',
-  router: {
-    base: '/Elvion/'
-  },
+  // router: {
+  //   base: '/Elvion/'
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -36,22 +36,23 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxt/image',
   ],
 
-  serverMiddleware: {
-    '/_ipx': '~/server/middleware/ipx.js'
+  image: {
+    // domains: ["https://peak-static-prod.remax.booj.io"]
+    // domains: ["0.0.0.0"],
   },
   
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/image',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
-  server: {
-    host: "0.0.0.0"
-  }
+  // server: {
+  //   host: "0.0.0.0"
+  // }
 }

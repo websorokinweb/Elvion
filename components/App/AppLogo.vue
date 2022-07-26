@@ -1,6 +1,6 @@
 <template>
   <NuxtLink class="logo nav-link" to="/" @click.native="scrollToSection('cover')">
-    <nuxt-img format="webp" src="@/assets/images/logo.svg" alt="logo" />
+    <img src="@/assets/images/logo.svg" alt="logo" />
   </NuxtLink>
 </template>
 

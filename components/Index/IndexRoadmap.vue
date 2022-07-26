@@ -48,7 +48,7 @@ export default {
           { 
             id: 0,
             title: 'The first point',
-            img: require('@/assets/images/temp/roadmap-1.png'),
+            img: '/temp/roadmap-1.png',
             list: [
               'Discussion of the idea',
               'Team formation.',
@@ -59,7 +59,7 @@ export default {
           { 
             id: 1,
             title: 'Second point',
-            img: require('@/assets/images/temp/roadmap-2.png'),
+            img: '/temp/roadmap-2.png',
             list: [
               // 'Development of the <br> NFT collection',
               'Development of the NFT collection',
@@ -69,7 +69,7 @@ export default {
           { 
             id: 2,
             title: 'The third point',
-            img: require('@/assets/images/temp/roadmap-3.png'),
+            img: '/temp/roadmap-3.png',
             list: [
               'Launching social media',
               'Launching a website.',
@@ -79,7 +79,7 @@ export default {
           { 
             id: 3,
             title: 'The fourth point',
-            img: require('@/assets/images/temp/roadmap-4.png'),
+            img: '/temp/roadmap-4.png',
             list: [
               'Sale of the NFT collection',
               'The beginning of game development.',

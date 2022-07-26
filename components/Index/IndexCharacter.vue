@@ -34,7 +34,7 @@ export default {
           'Our goal is to develop a full-fledged video game called "Legend of Elvion". The game will be in the genre of action-adventure with an open world and RPG elements.',
           'We also plan to link our game with the crypto world in order to remove the boundaries of virtual reality.'
         ],
-        img: require('@/assets/images/temp/character-graphic.png'),
+        img: '/temp/character-graphic.png',
       } 
     }
   },

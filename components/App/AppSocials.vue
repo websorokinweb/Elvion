@@ -8,7 +8,7 @@
       :class='social.type == "telegram" ? "social__link--telegram" : ""'
       target="_blank"
       >
-        <nuxt-img format="webp" :src="social.img" alt="social graphic" />
+        <img :src="social.img" alt="social graphic" />
       </a>
     </li>
   </ul>
