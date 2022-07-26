@@ -8,7 +8,7 @@
       :class='social.type == "telegram" ? "social__link--telegram" : ""'
       target="_blank"
       >
-        <img :src="social.img" alt="social graphic" />
+        <nuxt-img :src="social.img" loading="lazy" alt="social graphic" />
       </a>
     </li>
   </ul>
@@ -22,17 +22,17 @@ export default {
         {
           href: 'https://www.instagram.com/legendofelvion',  
           type: 'telegram',
-          img: require('@/assets/images/instagram.svg'),
+          img: '/instagram.svg',
         },
         {
           href: 'https://twitter.com/legendofelvion?t=8Ubs2nNTjAmmccECXXWWaQ&s=35',
           type: 'twitter',
-          img: require('@/assets/images/twitter.svg'),
+          img: '/twitter.svg',
         },
         {
           href: 'https://discord.gg/2SB3zwScu9',
           type: 'discord',
-          img: require('@/assets/images/discord.svg'),
+          img: '/discord.svg',
         },
       ],
     }
